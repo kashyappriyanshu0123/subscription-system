@@ -9,7 +9,7 @@ export const recordUsage = async (req: Request, res: Response) => {
 
     res.json({ message: "Usage recorded" });
   } catch (error) {
-  console.log(error);   // 👈 ADD THIS
+  console.log(error);   
   res.status(500).json({ error: "Something went wrong" });
 }
 };
